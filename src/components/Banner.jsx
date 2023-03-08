@@ -1,12 +1,12 @@
 import bannerImg from '../assets/banner.png'
-
+const hero = 'https://www.minecraft.net/content/dam/games/minecraft/marketplace/homepage-1.jpg'
 const Banner = () => {
   return (
     <div
       className="flex flex-col lg:flex-row justify-center lg:justify-between 
       items-center lg:space-x-10 md:w-2/3 w-full p-5 mx-auto"
     >
-      <img className="mb-5 lg:mb-0" src={bannerImg} alt="banner" />
+      <img className="mb-5 lg:mb-0" src={bannerImg} alt="banner"  />
       <div className="flex flex-col justify-between  items-start lg:items-center text-center lg:text-left">
         <div className="flex flex-col space-y-4 mb-5">
           <h4 className="text-3xl font-bold">Win a Game</h4>

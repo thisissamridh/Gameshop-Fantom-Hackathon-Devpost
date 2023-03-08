@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { setGlobalState, truncate, useGlobalState } from '../store'
 import { connectWallet } from '../Blockchain.Service'
-
+import logo from '../assets/logo.svg'
 const Header = () => {
   const navigate = useNavigate()
   const [cart] = useGlobalState('cart')
@@ -16,8 +16,13 @@ const Header = () => {
         to="/"
         className="flex justify-start items-center space-x-1 text-md font-bold"
       >
-        <FaEthereum className="cursor-pointer" size={25} />
-        <span>GameShop</span>
+        
+
+         <img src={logo} alt="logo" className="cursor-pointer" size={25} />
+
+
+
+        <span>GameStop</span>
       </Link>
 
       <div className="flex justify-end items-center space-x-6">

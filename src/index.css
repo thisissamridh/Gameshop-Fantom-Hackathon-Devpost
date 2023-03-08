@@ -8,11 +8,66 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'monospace','Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+  
 }
+/* 
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h4{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h5{
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+h6{
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+a{
+  color: #fff;
+}
+
+
+span{
+  color: #fff;
+}
+
+p{
+  color: #fff;
+}
+ */
+
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
