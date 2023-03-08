@@ -198,8 +198,8 @@ const BuyerOrder = ({ order, i }) => (
         <button
           type="button"
           className="rounded inline-block px-4 py-1.5 bg-blue-600 text-white
-              font-medium text-xs leading-tight uppercase hover:bg-blue-700 
-              focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800
+              font-medium text-xs leading-tight uppercase hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 
+              focus:bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:outline-none focus:ring-0 active:bg-blue-800
               transition duration-150 ease-in-out"
           onClick={() => onCancel(order.pid, order.id)}
         >

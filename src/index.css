@@ -11,9 +11,10 @@ body {
   font-family: 'monospace','Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: black; */
+  background-color: rgb(37, 36, 36);
   
 }
+
 /* 
 h1{
   font-size: 2rem;
@@ -33,11 +34,6 @@ h3{
   color: #fff;
 }
 
-h4{
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-}
 
 h5{
   font-size: 0.875rem;

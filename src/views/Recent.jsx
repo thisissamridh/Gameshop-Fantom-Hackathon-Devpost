@@ -61,7 +61,7 @@ const Conversation = ({ conversation }) => {
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
       className="px-6 py-2.5 bg-white text-black font-medium text-xs leading-tight
-      rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700
+      rounded shadow-md hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:shadow-lg focus:bg-gradient-to-r from-violet-500 to-fuchsia-500
       focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 hover:text-white
       active:shadow-lg transition duration-150 ease-in-out w-full text-left my-2"
       onClick={() => navigate('/chat/' + uid(conversation))}

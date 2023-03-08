@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { FaEthereum } from 'react-icons/fa'
+import { SiFantom  } from 'react-icons/si'
 import { Link } from 'react-router-dom'
 import { remFromCart, updateCart } from '../Cart.Service'
 import Summary from './Summary'
@@ -130,7 +130,7 @@ const Cart = ({ cart, summary }) => {
 
                 <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
                   <small className="flex justify-start items-center space-x-1">
-                    <FaEthereum />
+                    <SiFantom style={{ color: 'gold' }} />
                     <span className="text-gray-700 font-bold">
                       {product.price} EHT
                     </span>
@@ -151,7 +151,7 @@ const Cart = ({ cart, summary }) => {
                 </td>
                 <td className="text-sm font-light px-6 py-4 whitespace-nowrap">
                   <small className="flex justify-start items-center space-x-1">
-                    <FaEthereum />
+                    <SiFantom style={{ color: 'gold' }}  />
                     <span className="text-gray-700 font-bold">
                       {(product.qty * product.price).toFixed(3)} EHT
                     </span>
@@ -217,7 +217,7 @@ const Cart = ({ cart, summary }) => {
 
               <div className="text-sm font-light">
                 <small className="flex justify-start items-center space-x-1">
-                  <FaEthereum />
+                  <SiFantom style={{ color: 'gold' }} />
                   <span className="text-gray-700 font-bold">
                     {(product.qty * product.price).toFixed(3)} EHT
                   </span>

@@ -7,9 +7,10 @@ const AddButton = () => {
       <div>
         <button
           type="button"
-          className="flex justify-center items-center rounded-full bg-blue-600
-          text-white leading-normal uppercase shadow-md hover:bg-blue-700
-          hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none
+          className="bg-gradient-to-r from-violet-500 to-fuchsia-500 
+          flex justify-center items-center rounded-full bg-blue-600
+          text-white leading-normal uppercase shadow-md hover:bg-gradient-to-r from-violet-500 to-fuchsia-500
+          hover:shadow-lg focus:bg-gradient-to-r from-violet-500 to-fuchsia-500 focus:shadow-lg focus:outline-none
           focus:ring-0 active:bg-blue-800 active:shadow-lg transition
           duration-150 ease-in-out w-9 h-9"
           onClick={() => setGlobalState('modal', 'scale-100')}

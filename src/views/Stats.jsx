@@ -14,7 +14,7 @@ const Stats = () => {
   return loaded ? (
     <>
       <div className="h-20"></div>
-      <h4 className="text-center uppercase mb-8">Your Stats</h4>
+      <h4 className="text-center uppercase mb-8 font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Your Stats</h4>
       <ShopStats stats={stats} />
       <Treasury stats={stats} />
       <div className="flex justify-center items-center my-4">

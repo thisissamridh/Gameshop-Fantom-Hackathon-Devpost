@@ -53,8 +53,8 @@ const Details = ({ product }) => {
       />
       <div className="flex flex-col justify-between  items-start lg:items-center text-center lg:text-left">
         <div className="flex flex-col space-y-4 mb-5">
-          <h4 className="text-3xl font-bold">{product.name}</h4>
-          <p className="text-gray-500">{product.description}</p>
+          <h4 className="font-extrabold text-transparent text-4xl py-4 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{product.name}</h4>
+          <p className="text-white">{product.description}</p>
 
           <div className="flex justify-center lg:justify-between space-x-2 items-center">
             <Link

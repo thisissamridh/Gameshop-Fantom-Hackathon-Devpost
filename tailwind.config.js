@@ -1,7 +1,7 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   mode: 'jit',
-  darkMode:  false , // or 'media' or 'class'
+  darkMode: 'media', // set darkMode to 'media'
 
   theme: {
     fontFamily: {
@@ -26,6 +26,17 @@ module.exports = {
       },
       animation: {
         'slide-in': 'slide-in 0.5s ease-out',
+      },
+      // add dark mode colors
+      colors: {
+        'dark-gray': '#1F2937',
+        'light-gray': '#F5F7FA',
+        'dark-blue': '#1E3A8A',
+        'light-blue': '#3B82F6',
+        'dark-green': '#065F46',
+        'light-green': '#10B981',
+        'dark-red': '#7B0E0E',
+        'light-red': '#EF4444',
       },
     },
   },

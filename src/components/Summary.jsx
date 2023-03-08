@@ -1,4 +1,4 @@
-import { FaEthereum } from 'react-icons/fa'
+import { SiFantom  } from 'react-icons/si'
 import { useState } from 'react'
 import { createOrder } from '../Blockchain.Service'
 import { clearCart } from '../Cart.Service'
@@ -45,15 +45,15 @@ const Summary = ({ summary }) => {
     >
       <form className="w-4/5 md:w-2/5 my-2">
         <div className="mb-3">
-          <label className="form-label inline-block mb-2 font-bold text-sm text-gray-700">
+          <label className="form-label inline-block mb-2 font-bold text-sm text-white">
             Destination
           </label>
 
           <input
             type="text"
             className="form-control block w-full px-3 py-1.5 text-base font-normal
-            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
-            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white
+            text-white bg-white bg-clip-padding border border-solid border-gray-300
+            rounded transition ease-in-out m-0 focus:text-white focus:bg-white
             focus:border-blue-600 focus:outline-none"
             placeholder="Your full address"
             name="destination"
@@ -63,15 +63,15 @@ const Summary = ({ summary }) => {
         </div>
 
         <div className="mb-3">
-          <label className="form-label inline-block mb-2 font-bold text-sm text-gray-700">
+          <label className="form-label inline-block mb-2 font-bold text-sm text-white">
             Phone
           </label>
 
           <input
             type="text"
             className="form-control block w-full px-3 py-1.5 text-base font-normal
-            text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300
-            rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white
+            text-white bg-white bg-clip-padding border border-solid border-gray-300
+            rounded transition ease-in-out m-0 focus:text-white focus:bg-white
             focus:border-blue-600 focus:outline-none"
             placeholder="Phone"
             name="phone"
@@ -94,37 +94,37 @@ const Summary = ({ summary }) => {
 
       <div className="w-4/5 md:w-2/5 my-2">
         <div className="mb-3">
-          <h4 className="mb-2 font-bold text-sm text-gray-700">
+          <h4 className="mb-2 font-bold text-sm text-white">
             Order Summary
           </h4>
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700">Subtotal</h4>
+          <h4 className="mb-2 text-sm text-white">Subtotal</h4>
 
           <small className="flex justify-start items-center space-x-1">
-            <FaEthereum />
-            <span className="text-gray-700">
+            <SiFantom style={{ color: 'gold' }}  />
+            <span className="text-white">
               {(summary.grand - summary.tax).toFixed(3)} EHT
             </span>
           </small>
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700">Tax</h4>
+          <h4 className="mb-2 text-sm text-white">Tax</h4>
 
           <small className="flex justify-start items-center space-x-1">
-            <FaEthereum />
-            <span className="text-gray-700">{summary.tax.toFixed(3)} EHT</span>
+            <SiFantom style={{ color: 'gold' }}  />
+            <span className="text-white">{summary.tax.toFixed(3)} EHT</span>
           </small>
         </div>
 
         <div className="flex justify-between items-center mb-3">
-          <h4 className="mb-2 text-sm text-gray-700 font-bold">Grand Total</h4>
+          <h4 className="mb-2 text-sm text-white font-bold">Grand Total</h4>
 
           <small className="flex justify-start items-center space-x-1">
-            <FaEthereum />
-            <span className="text-gray-700 font-bold">
+            <SiFantom style={{ color: 'gold' }} />
+            <span className="text-white font-bold">
               {summary.grand.toFixed(3)} EHT
             </span>
           </small>

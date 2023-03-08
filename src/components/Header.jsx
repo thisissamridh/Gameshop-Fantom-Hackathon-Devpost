@@ -1,10 +1,10 @@
 import Identicon from 'react-identicons'
-import { FaEthereum } from 'react-icons/fa'
+import { SiFantom  } from 'react-icons/si'
 import { Link, useNavigate } from 'react-router-dom'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { setGlobalState, truncate, useGlobalState } from '../store'
 import { connectWallet } from '../Blockchain.Service'
-import logo from '../assets/logo.svg'
+import logoblack from '../assets/logoblack.svg'
 const Header = () => {
   const navigate = useNavigate()
   const [cart] = useGlobalState('cart')
@@ -18,18 +18,18 @@ const Header = () => {
       >
         
 
-         <img src={logo} alt="logo" className="cursor-pointer" size={25} />
+         <img src={logoblack} alt="logo" className="cursor-pointer" size={25} />
 
 
 
-        <span>GameStop</span>
+        <span className='font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>GameStop</span>
       </Link>
 
       <div className="flex justify-end items-center space-x-6">
         <div className="flex justify-center items-center space-x-4">
           <button
             onClick={() => navigate('/cart')}
-            className="rounded-full text-gray-500 bg-gray-200 font-semibold text-sm flex 
+            className="rounded-full font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 bg-gray-200 font-semibold text-sm flex 
             align-center cursor-pointer active:bg-gray-300 transition duration-300 
             ease w-max py-1 px-2"
           >
@@ -49,25 +49,23 @@ const Header = () => {
             <Identicon
               string={connectedAccount}
               size={25}
-              className="h-10 w-10 object-contain rounded-full cursor-pointer"
+              className="h-10 w-10 object-contain rounded-full cursor-pointer "
             />
           </button>
         </div>
         {connectedAccount ? (
           <button
-            className="px-6 py-2.5 bg-blue-800 text-white font-medium text-xs 
-            leading-tight uppercase rounded shadow-md hover:bg-blue-900 hover:shadow-lg
-            focus:bg-blue-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-900 
-            active:shadow-lg transition duration-150 ease-in-out"
+            className=" bg-gradient-to-r from-violet-500 to-fuchsia-500
+            px-6 py-2.5  text-white font-medium text-s 
+            leading-tight uppercase rounded shadow-md  transition duration-150 ease-in-out"
           >
             {truncate(connectedAccount, 4, 4, 11)}
           </button>
         ) : (
           <button
-            className="px-6 py-2.5 bg-blue-800 text-white font-medium text-xs 
-            leading-tight uppercase rounded shadow-md hover:bg-blue-900 hover:shadow-lg
-            focus:bg-blue-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-900 
-            active:shadow-lg transition duration-150 ease-in-out"
+            className=" bg-gradient-to-r from-violet-500 to-fuchsia-500
+            px-6 py-2.5  text-white font-medium text-s 
+            leading-tight uppercase rounded shadow-md  transition duration-150 ease-in-out"
             onClick={connectWallet}
           >
             Connect
