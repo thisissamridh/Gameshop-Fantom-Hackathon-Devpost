@@ -53,7 +53,7 @@ const Summary = ({ summary }) => {
             type="text"
             className="form-control block w-full px-3 py-1.5 text-base font-normal
             text-white bg-white bg-clip-padding border border-solid border-gray-300
-            rounded transition ease-in-out m-0 focus:text-white focus:bg-white
+            rounded transition ease-in-out m-0 focus:text-black focus:bg-white
             focus:border-blue-600 focus:outline-none"
             placeholder="Your full address"
             name="destination"
@@ -71,7 +71,7 @@ const Summary = ({ summary }) => {
             type="text"
             className="form-control block w-full px-3 py-1.5 text-base font-normal
             text-white bg-white bg-clip-padding border border-solid border-gray-300
-            rounded transition ease-in-out m-0 focus:text-white focus:bg-white
+            rounded transition ease-in-out m-0 focus:text-black focus:bg-white
             focus:border-blue-600 focus:outline-none"
             placeholder="Phone"
             name="phone"
